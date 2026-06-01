@@ -1,0 +1,69 @@
+.talim {
+  background-color: var(--primary);
+  padding: 50px 0px;
+}
+
+.talim h1 {
+  padding-top: 0px;
+  color: var(--white) !important;
+}
+
+.talim-card-bar {
+  gap: var(--gap-20);
+  /* flex-wrap: wrap */
+}
+
+.pad {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--white);
+  position: relative;
+
+  h1 {
+    color: var(--primary) !important;
+    font-family: MyCustomFont;
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-400);
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: var(--e5);
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-400);
+    max-width: 500px;
+  }
+}
+
+.talim-left {
+  width: 500px;
+  height: 540px;
+}
+.talim-right {
+  width: 800px;
+  height: 260px;
+}
+
+.talim-right:first-child {
+  margin-bottom: 20px;
+}
+.pad > img {
+  max-width: 250px;
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+}
+
+/* ? responsive */
+@media(max-width:1000px){
+   
+    .talim-card-bar{
+        /* padding: 0px 10px !important; */
+        flex-wrap: wrap;
+    }
+    .talim-left, .talim-right{
+        width: 100%;
+        height: 500px;
+    }
+}

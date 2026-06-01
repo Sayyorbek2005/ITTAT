@@ -1,0 +1,408 @@
+import frontend from '../../assets/frontend.png'
+import foundaion from '../../assets/foundation.png'
+import robo from '../../assets/robo.png'
+import grafikDizayn from '../../assets/dizayn.png'
+import smm from '../../assets/smm.png'
+import kompyuterSavotxonlik from '../../assets/ksavodxonlik.png'
+import roboPro from '../../assets/roboPRO.svg'
+import roboMaster from '../../assets/robo.png'
+import threeDModeling from '../../assets/3dpro.png'
+import backent from '../../assets/backent.jpeg'
+// import ustozImg from '../../assets/shaxzod_akajon.png'
+
+// ? 
+import shahzodAkajon from '../../assets/shaxzod_akajon.png'
+import sayyorbek from '../../assets/xudam-2.png'
+import oytem from '../../assets/oytijon.png'
+import jaxongirUstoz from '../../assets/Jahongir.jpg'
+import ziyo from '../../assets/Ziyo.jpg'
+import MuhammadUstoz from '../../assets/Muhammad-ustoz.png'
+import toshtemirUstoz  from '../../assets/toshtemirUstoz.png'
+
+
+export const BizningKurslar = [
+  {
+    id: 1,
+    img: frontend,
+    imgUstoz: shahzodAkajon,
+    kategoriya: "Frontend kursi ustozi",
+    davomiyligi: "6 oy",
+    amaliyot: "1 amaliy ta'lim",
+    nomi: "Frontend",
+    tavsif:
+      "Veb-saytlar va ilovalar uchun foydalanuvchi interfeysini yaratish bilan shug'ullanadigan dasturlash sohasidir. Frontend dasturchilari veb-sahifalarni foydalanuvchilar uchun qulay va jozibador qilish uchun kod yozadilar.",
+    ai_integratsiya: true,
+    ustozTwo: "Xoliqov Sayyorbek",
+    ustoz: "Muradov Shaxzod",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+5',
+    mamnunOquvchilar: '+50',
+    loyihalar: '+15',
+    kursNarxi: '790.000',
+    ortachaOylikIshHaqi: '8 mln - 18 mln so‘m',
+    bizningMentorlar:
+      'Bizning mentorlarimiz xalqaro darajadagi mutaxassislar bo`lib, o`z sohasida katta tajribaga ega.',
+    texnologiyalar: [
+      'HTML',
+      'CSS',
+      'Sass',
+      'Bootstrap',
+      'JavaScript',
+      'React',
+      'Vue.js',
+      'NPM terminal commands',
+      'Node.js',
+      'GitHub',
+      'Git',
+      'AI integration',
+      'Webpack',
+      'ReduxToolkit',
+      'TypeScript',
+      'Figma',
+      'Responsive Design'
+    ],
+
+    uzbJunior: '600', 
+    uzbMiddle: '1000',
+    uzbSenior: '2500',
+    dunyoJunior: '1200', 
+    dunyoMiddle: '2800',
+    dunyoSenior: '4500',
+  },
+
+  {
+    id: 2,
+    imgUstoz: toshtemirUstoz,
+    img: robo,
+    kategoriya: "Robototexnika kursi ustozi",
+    davomiyligi: "6 oy",
+    nomi: "Robotexnika standart",
+    tavsif:
+      "Bu robotlar yaratish, ularni boshqarish va avtomatizatsiya tizimlarini ishlab chiqishga qaratilgan ilm-fan va texnologiya sohasidir. Robototexnika nafaqat fizika va mexanika, balki dasturlash, elektronika va sun'iy intellekt sohalarini ham o'z ichiga oladi.",
+    ai_integratsiya: true,
+    ustoz: "Abdurahmonov Toshtemir",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+4',
+    mamnunOquvchilar: '+40',
+    loyihalar: '+10',
+    kursNarxi: '840.000',
+    ortachaOylikIshHaqi: '6 mln - 15 mln so‘m',
+    texnologiyalar: [
+      'Python',
+      'C++',
+      'ROS',
+      'OpenCV',
+      'Arduino',
+      'Raspberry Pi',
+      'AI integration',
+      'Machine Learning'
+    ],
+    uzbJunior: '600', 
+    uzbMiddle: '1500',
+    uzbSenior: '2200',
+    dunyoJunior: '1500', 
+    dunyoMiddle: '2500',
+    dunyoSenior: '3200',
+  },
+
+  {
+    id: 3,
+    imgUstoz: sayyorbek,
+    img: foundaion,
+    kategoriya: "Foundation kursi ustozi",
+    davomiyligi: "2 oy",
+    nomi: "Foundaion",
+    tavsif:
+      "Dasturlashni noldan o'rganmoqchi bo'lganlar uchun maxsus ishlab chiqilgan boshlang'ich kurs bo'lib, u IT sohasiga birinchi qadam qo'yish uchun mustahkam poydevor yaratadi.",
+    ai_integratsiya: true,
+    ustozTwo: "G`ulomhusinv Muhammad",
+    ustoz: "Xoliqov Sayyorbek",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+4',
+    mamnunOquvchilar: '+50',
+    loyihalar: '+13',
+    kursNarxi: '740.000',
+    ortachaOylikIshHaqi: '4 mln - 10 mln so‘m',
+    texnologiyalar: [
+      'c#',
+      'C++',
+      'Python',
+      'GitHub',
+      'AI integration',
+      "Algaritmlash",
+      "Ma`lumotlar tuzilmasi",
+      "Muammolarni yechish",
+      "Xatoliklar ustida ishlash",
+    ],
+    uzbJunior: '400', 
+    uzbMiddle: '1200',
+    uzbSenior: '2500',
+    dunyoJunior: '1200', 
+    dunyoMiddle: '2400',
+    dunyoSenior: '4000',
+  },
+
+  {
+    id: 4,
+    imgUstoz: jaxongirUstoz,
+    img: grafikDizayn,
+    kategoriya: "Dizayn & AI pro kursi ustozi",
+    davomiyligi: "6 oy",
+    amaliyot: "1 amaliy ta'lim",
+    nomi: "Design & AI pro",
+    tavsif:
+      "Vizual kommunikatsiyani yaratish va ma'lumotlarni estetik tarzda taqdim etish san'ati va texnikasidir. Grafik dizaynerlar turli xil vizual elementlarni (ranglar, shakllar, tasvirlar va shriftlar) birlashtirgan holda, ma'lumot yoki g'oyani samarali va chiroyli tarzda ifodalashadi.",
+    ai_integratsiya: true,
+    texnologiyalar: [
+      'Photoshop',
+      'Illustrator',
+      'Figma',
+      'AI integration',
+      'Responsive Design'
+    ],
+   
+    ustoz: "Hamidov Jahongir",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+4',
+    mamnunOquvchilar: '+50',
+    kursNarxi: '740.000',
+    ortachaOylikIshHaqi: '6 mln - 20 mln so‘m',
+
+
+     uzbJunior: '500', 
+    uzbMiddle: '1200',
+    uzbSenior: '2500',
+    dunyoJunior: '1500', 
+    dunyoMiddle: '2500',
+    dunyoSenior: '4500',
+
+  },
+
+  {
+    id: 5,
+    imgUstoz: oytem,
+    img: smm,
+    kategoriya: "SMM kursi ustozi",
+    davomiyligi: "3 oy",
+    nomi: "SMM",
+    tavsif:
+      "(Social Media Marketing) – bu ijtimoiy tarmoqlarda marketing strategiyalarini yaratish va amalga oshirish jarayonidir. SMMning asosiy maqsadi – mahsulot yoki xizmatni targ'ib qilish, brendni tanitish va maqsadli auditoriya bilan aloqani o'rnatishdir.",
+    ai_integratsiya: true,
+    ustoz: "Muradova Nurona",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+3',
+    mamnunOquvchilar: '+30',
+    loyihalar: '+5',
+    kursNarxi: '900.000',
+    ortachaOylikIshHaqi: '5 mln - 15 mln so‘m',
+    texnologiyalar: [
+      'Facebook Ads',
+      'Instagram Ads',
+      'AI integration',
+      'Content Creation',
+      'Analytics Tools',
+      'ssenaries',
+      "Mobilogrph",
+    ],
+     uzbJunior: '500', 
+    uzbMiddle: '1200',
+    uzbSenior: '2500',
+    dunyoJunior: '1200', 
+    dunyoMiddle: '2500',
+    dunyoSenior: '4500',
+
+
+  },
+
+  {
+    id: 6,
+    imgUstoz: ziyo,
+    img: kompyuterSavotxonlik,
+    kategoriya: "Kompiyuter savodxonligi kursi ustozi",
+    davomiyligi: "2 oy",
+    nomi: "Kompyuter savodxonligi",
+    tavsif:
+      "Kompyuter savodxonligi – bu kompyuter texnologiyalaridan samarali foydalanish va raqamli dunyoda ishlash uchun zarur bo'lgan bilim va ko'nikmalarni egallashni anglatadi.",
+    ai_integratsiya: true,
+    ustoz: "Elmurodov Ziyodulloh",
+    ustozTwo: "Hamidov Jahongir",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+3',
+    mamnunOquvchilar: '+50',
+    kursNarxi: '690.000',
+    ortachaOylikIshHaqi: '3 mln - 7 mln so‘m',
+    texnologiyalar: [
+      'Microsoft Office',
+      'Google Workspace',
+      'Data Analysis',
+      'AI integration',
+      'excel',
+      'word',
+      'powerpoint',
+      'email communication',
+      'basic programming concepts'
+    ],
+    uzbJunior: '500', 
+    uzbMiddle: '1000',
+    uzbSenior: '1500',
+    dunyoJunior: '1200', 
+    dunyoMiddle: '2000',
+    dunyoSenior: '3200',
+  },
+
+  {
+    id: 7,
+    imgUstoz: MuhammadUstoz,
+    img: backent,
+    kategoriya: "Backend kursi ustozi",
+    davomiyligi: "6 oy",
+    amaliyot: "1 amaliy ta'lim",
+    nomi: "Backend",
+    tavsif:
+      "Backend – bu veb-ilovalar va saytlarning server tomonidagi ishlarni boshqaradigan dasturlash sohasi. Backend dasturchilari foydalanuvchilarga ko'rinmaydigan, ammo veb-sayt yoki ilovaning ishlashini ta'minlaydigan barcha tizimlarni yaratadi.",
+    ai_integratsiya: true,
+    ustoz: "G`ulomhusinv Muhammad",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+5',
+    mamnunOquvchilar: '+50',
+    loyihalar: '+14',
+    kursNarxi: '840.000',
+    ortachaOylikIshHaqi: '10 mln - 25 mln so‘m',
+    texnologiyalar: [
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'PostgreSQL',
+      'AI integration',
+      'Terminal Commands',
+      "Django"
+    ],
+    uzbJunior: '600', 
+    uzbMiddle: '1500',
+    uzbSenior: '2300',
+    dunyoJunior: '1200', 
+    dunyoMiddle: '2300',
+    dunyoSenior: '4500',
+  },
+
+  {
+    id: 8,
+    imgUstoz: toshtemirUstoz,
+    img: roboPro,
+    kategoriya: "Robototexnika pro kursi ustozi",
+    davomiyligi: "3 oy",
+    amaliyot: "1 amaliy ta'lim",
+    nomi: "Robotexnika pro",
+    tavsif:
+      "Robototexnika pro – bu robototexnika sohasida yuqori darajadagi bilim va ko'nikmalarni egallashni maqsad qilgan professional kursdir. Kurs davomida talabalarga murakkab robototexnika tizimlarini yaratish, sun'iy intellekt va mashina o'rganish kabi yo'nalishlar o'rgatiladi.",
+    ai_integratsiya: true,
+    ustoz: "Abdurhmonov Toshtemir",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+4',
+    mamnunOquvchilar: '+40',
+    loyihalar: '+15',
+    kursNarxi: '990.000',
+    ortachaOylikIshHaqi: '8 mln - 20 mln so‘m',
+    texnologiyalar: [
+      'Python',
+      'C++',
+      'AI integration',
+      'Robotics Fundamentals',
+      'Control Systems',
+      "ROS",
+      "OpenCV",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    uzbJunior: '800', 
+    uzbMiddle: '1800',
+    uzbSenior: '2500',
+    dunyoJunior: '1700', 
+    dunyoMiddle: '2500',
+    dunyoSenior: '3800',
+  },
+
+  {
+    id: 9,
+    imgUstoz: toshtemirUstoz,
+    img: roboMaster,
+    kategoriya: "Robototexnika master kursi ustozi",
+    davomiyligi: "2 oy",
+    amaliyot: "1 amaliy ta'lim",
+    nomi: "Robotexnika master",
+    tavsif:
+      "Robototexnika pro – bu robototexnika sohasida yuqori darajadagi bilim va ko'nikmalarni egallashni maqsad qilgan professional kursdir. Kurs davomida talabalarga murakkab robototexnika tizimlarini yaratish, sun'iy intellekt va mashina o'rganish kabi yo'nalishlar o'rgatiladi.",
+    ai_integratsiya: true,
+    ustoz: "Abdurahmonov Toshtemir",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+4',
+    mamnunOquvchilar: '+40',
+    loyihalar: '+15',
+    kursNarxi: '1.390.000',
+    ortachaOylikIshHaqi: '10 mln - 30 mln so‘m',
+    texnologiyalar: [
+      'Python',
+      'C++',
+      'AI integration',
+      'Robotics Fundamentals',
+      'Control Systems',
+      "ROS",
+      "OpenCV",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+   uzbJunior: '1000', 
+    uzbMiddle: '2000',
+    uzbSenior: '2700',
+    dunyoJunior: '2000', 
+    dunyoMiddle: '2700',
+    dunyoSenior: '4000',
+  },
+
+  {
+    id: 10,
+    imgUstoz: jaxongirUstoz,
+    img: threeDModeling,
+    kategoriya: "3d modeling pro kursi ustozi",
+    davomiyligi: "6 oy",
+    amaliyot: "1 amaliy ta'lim",
+    nomi: "3D modeling pro",
+    tavsif:
+      "3D Modeling Pro – bu virtual olamda uch o'lchamli ob'ektlar va muhitlarni yaratishni professional darajada o'rgatuvchi kursdir. Kurs davomida talabalar murakkab renderlash, tekstura berish, animatsiya asoslari hamda o'yin sanoati va arxitektura uchun yuqori sifatli (High-Poly) modellar yaratishni mukammal egallaydilar.",
+    ai_integratsiya: true,
+    ustoz: "Hamidov Jahomgir",
+    nechaSoat: '2',
+    haftada: '3',
+    tajriba: '+3',
+    mamnunOquvchilar: '+45',
+    loyihalar: '+10',
+    kursNarxi: '740.000',
+    ortachaOylikIshHaqi: '7 mln - 20 mln so‘m',
+    texnologiyalar: [
+      'Blender',
+      'Maya',
+      '3ds Max',
+      'ZBrush',
+      'AI integration',
+      'High-Poly Modeling',
+      'Texturing',
+      'Rendering Techniques'
+    ],
+    uzbJunior: '600', 
+    uzbMiddle: '1700',
+    uzbSenior: '2300',
+    dunyoJunior: '1300', 
+    dunyoMiddle: '2000',
+    dunyoSenior: '3000',
+  
+  },
+];

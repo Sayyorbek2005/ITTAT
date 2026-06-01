@@ -1,0 +1,188 @@
+/* Asosiy fon */
+.bizningKurslarimiz {
+    background-color: var(--primary);
+    /* Rasmda ko'rsatilgan ko'k fon */
+    padding: 50px 0px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    /* margin: 50px 0px; */
+}
+
+.bizningKurslarimiz>div>h1 {
+    color: var(--white) !important;
+    padding: 0px 0px 50px 0px;
+}
+
+/* Grid sistemasi */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+/* Karta dizayni */
+.course-card {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    max-height: 650px;
+    min-height: 550px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Yuqori qism (Kategoriya va Vaqt) */
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-20);
+    font-weight: 600;
+    color: var(--black);
+
+    span {
+        color: var(--primary);
+    }
+
+
+}
+
+.top-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* @media (max-width: 750px) {
+  
+    .top-left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+} */
+
+
+.practice-tag {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    padding: 5px;
+    border-radius: 5px;
+    /* margin-left: 10px; */
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+
+/* Qo'shimcha ehtiyot choralari: bo'sh elementlarni yashirish */
+.practice-tag:empty {
+    display: none;
+}
+
+.separator {
+    margin: 0 8px;
+    color: var(-e5);
+}
+
+/* Markaziy qism (Sarlavha va Tavsif) */
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.course-title {
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-700);
+    color: var(--primary);
+    margin: 0;
+}
+
+.ai-label {
+    background: linear-gradient(90deg, #9333ea, #db2777);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: var(--font-size-18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-label > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5pxc;
+}
+
+.course-description {
+    color: var(--e5);
+    font-size: var(--font-size-20);
+    line-height: 1.5;
+    margin-top: 15px;
+    flex-grow: 1;
+}
+
+/* Pastki qism (Tugma va Rasm) */
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.arrow-circle {
+    width: 70px;
+    height: 70px;
+    font-size: var(--font-size-30);
+    color: var(--primary);
+    border-radius: 15px;
+    border: 1.5px solid var(--white);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid var(--dark-primary-color);
+    position: absolute;
+    bottom: 20px;
+}
+
+.arrow-circle:hover {
+    transform: translateX(10px);
+}
+
+/* Grafik shakl (Rasm o'rniga vaqtinchalik) */
+.blue-shape {
+    width: 120px;
+    height: 80px;
+    background: var(--dark-primary-color);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: 0.8;
+
+}
+
+.abstract-graphic img {
+    max-width: 400px;
+    min-width: 300px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    z-index: -1;
+
+}

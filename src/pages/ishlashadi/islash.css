@@ -1,0 +1,70 @@
+.ishlash{
+    padding: 50px 0px;
+    
+}
+.ishlash h1{
+    padding-top: 0px;
+}
+.ishlash-img-bar{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    gap: var(--gap-50);
+    flex-wrap: wrap;
+}
+
+.ishlash-img-bar img{
+    max-width: 200px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.ishlash-img-bar img:nth-child(6){
+    background-color: var(--black);
+}
+
+/* ? biz qayerda joylashganmiz  */
+
+.joylashuv{
+
+    position: relative;
+
+    h1{
+        padding-top: 100px;
+    }
+}
+
+.joylashuv iframe{
+    width: 100%;
+    max-height: 600px;
+    min-height: 500px;
+    height: 100%;
+    border: none;
+
+}
+.iframe-loc{
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    gap: var(--gap-10);
+    border-radius: 10px;
+
+    .loc{
+        font-size: var(--font-size-50);
+    }
+
+    p{
+        font-family: MyCustomFont;
+        font-size: var(--font-size-16);
+    }
+}

@@ -1,0 +1,78 @@
+.kelajakFuture {
+    background-color: var(--primary);
+
+    h1 {
+        padding-top: 50px;
+        color: var(--white) !important;
+    }
+}
+
+.future-left>img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.future-left>div {
+    padding-bottom: 50px;
+}
+.button-bar-future{
+    max-width: 700px;
+    width: 100%;
+}
+
+.future-left>div>button {
+    transform: rotate(10deg);
+    border: 1px solid var(--white);
+    padding: 10px 10px;
+    transition: all .3s ease;
+    padding: 7px;
+    font-size: 18px;
+    height: auto;
+    margin:10px 5px;
+
+    &:hover{
+        background-color: var(--white);
+        color: var(--primary);
+    }
+}
+
+
+.future-left>div>button:nth-child(even) {
+    transform: rotate(-10deg);
+    /* background-color: var(--white); */
+    /* color: var(--primary); */
+}
+
+.future-right {
+    height: 550px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media(max-width: 600px){
+
+  
+     .future{
+        flex-direction: column-reverse;
+        
+     }
+
+    .future-left>div>button {
+    transform: rotate(0deg);
+    border: 1px solid var(--white);
+
+}
+
+.future-left>div>button:nth-child(even) {
+    transform: rotate(0deg);
+    /* background-color: var(--white); */
+    /* color: var(--primary); */
+    margin: 10px;
+}
+
+.future-right {
+    height: auto;
+}
+
+}

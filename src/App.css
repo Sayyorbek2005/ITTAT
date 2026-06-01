@@ -1,0 +1,143 @@
+/* RESET */
+* {
+    padding: 0;
+     margin: 0;
+    box-sizing: border-box;
+    font-family: 'MyFontTwo';
+}
+
+
+
+/* FONT */
+@font-face {
+	font-family: 'MyCustomFont';
+	src: url('./font/PowerGrotesk-Regular.otf'),
+		url('./font/PowerGrotesk-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+    
+}
+@font-face {
+	font-family: 'MyFontTwo';
+	src: url(./font/gilroy-semibold.ttf);
+	/* font-weight: normal; */
+	/* font-style: normal; */
+}
+
+button,
+input {
+    outline: none;
+}
+
+/* ROOT VARIABLES (RESPONSIVE) */
+:root {
+    /* COLOR VARIABLES */
+    --primary: #3d51e3;
+    --dark-primary-color: #354ae9;
+    --shadow-color:rgb(225, 224, 224);
+    --white: #fff;
+    --black: #000;
+    --e5: #a5a5a5;
+    --f5: #f5f5f5;
+    --c3: #3C3C43D9;
+
+    /* RESPONSIVE FONT-SIZES */
+    --font-size-12: clamp(8px, 1.2vw, 12px);
+    --font-size-14: clamp(10px, 1.2vw, 14px);
+    --font-size-16: clamp(14px, 1.2vw, 16px);
+    --font-size-18: clamp(16px, 1.4vw, 18px);
+    --font-size-20: clamp(18px, 1.6vw, 20px);
+    --font-size-25: clamp(22px, 2vw, 25px);
+    --font-size-30: clamp(20px, 2.5vw, 30px);
+    --font-size-35: clamp(30px, 3vw, 35px);
+    --font-size-40: clamp(30px, 3.5vw, 40px);
+    --font-size-45: clamp(30px, 4vw, 45px);
+    --font-size-50: clamp(38px, 4.5vw, 50px);
+    --font-size-55: clamp(42px, 5vw, 55px);
+    --font-size-60: clamp(46px, 6vw, 60px);
+
+    /* FONT WEIGHTS (tartiblangan / to‘g‘ri) */
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-900: 900;
+
+    /* RESPONSIVE GAP */
+    --gap-10: clamp(5px, 1vw, 10px);
+    --gap-20: clamp(12px, 2vw, 20px);
+    --gap-30: clamp(18px, 3vw, 30px);
+    --gap-40: clamp(24px, 4vw, 40px);
+    --gap-50: clamp(30px, 5vw, 50px);
+}
+
+/* CURSOR POINTER */
+button,
+i,
+svg,
+li {
+    cursor: pointer;
+    
+}
+
+/* LINK STYLES RESET */
+a {
+    text-decoration: none;
+    
+}   
+
+/* MAX WIDTH */
+.max-width {
+    max-width: 1300px;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+@media (max-width: 1000px) {
+    .max-width{
+        padding: 10px;
+    }
+}
+
+/* DISPLAY HELPERS */
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.j-left{
+    justify-content: left;
+}
+.color-pr{
+    color: var(--primary) !important;
+
+}
+.he{
+    /* margin-top: -4px; */
+    color: var(--primary) !important;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+
+
+@media (max-width: 900) {
+    img{
+        max-width: 100%;
+        
+    }
+}
