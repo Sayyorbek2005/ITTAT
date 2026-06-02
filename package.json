@@ -12,7 +12,6 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.27.1",
-    "aos": "^2.3.4",
     "axios": "^1.11.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
