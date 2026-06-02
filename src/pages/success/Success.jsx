@@ -80,7 +80,11 @@ export default function Success() {
       >
         {videos.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="card">
+            <div
+              className={`card ${
+                activeId === item.id ? "active-video" : ""
+              }`}
+            >
               <YouTube
                 id={`youtube-${item.id}`}
                 videoId={item.videoId}
@@ -93,6 +97,7 @@ export default function Success() {
                     rel: 0,
                   },
                 }}
+                
                 onReady={(event) => {
                   players.current[item.id] = event.target;
                 }}
