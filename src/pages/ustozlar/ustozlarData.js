@@ -6,32 +6,13 @@ import jaxongirUstoz from '../../assets/Jahongir.jpg'
 import ziyo from '../../assets/Ziyo.jpg'
 import MuhammadUstoz from '../../assets/Muhammad-ustoz.png'
 import mansurUstoz from '../../assets/mansurUstoz.png'
-
+import toshtemirUstoz  from '../../assets/ToshtemirUstozim.png'
 
 
 export const ustozlar = [
-    // {
-    //     id: 1,
-    //     name: "Xoliqov",
-    //     surname: "Sayyorbek",
-    //     fullName: "Xoliqov Sayyorbek",
-    //     img: sayyorbek,
-    //     kursNome: 'Frontend',
-    //     kursUstozi: "Frontend kursi ustozi",
-    //     tajriba: "+3 yil",
-    //     mamnunOquvchilar: "+50",
-    //     loyihalar: "+10",
-    //     qoshimchaMalumot: "Frontend dasturchi — bu talab yuqori bo‘lgan kasbFrontend dasturchilar saytlar, xizmatlar va ilovalarni yaratishadi, ulardan millionlab odamlar foydalanadi: internet-do'konlar, onlayn banklar, qidiruv tizimlari, ijtimoiy tarmoqlar. Bunday mutaxassis saytning tashqi ko‘rinishi bilan ham, foydalanuvchilar ko‘rmaydigan xizmat qismi bilan ham ishlashi mumkin.",
-    //     portfolio: portfolio,
-    //     nechaSoat: '2',
-    //     haftada: '3',
-    //     kursNarxi: '790.000',
-    //     bizningMentorlar: 'Bizning mentorlarimiz xalqaro darajadagi mutaxassislar bo`lib, o`z sohasida katta tajribaga ega. ',
-    //     texnologiyalar: ['HTML', 'CSS', 'Sass', 'Bootstrap', 'JavaScript', 'React', 'Vue.js', 'NPM terminal commands', "Node.js", "GitHub", 'Git', "AI", 'Webpack', "ReduxToolkit", "TypeScript", "Figma", "Responsive Design"],
 
-    // },
     {
-        id: 2,
+        id: 1,
         name: "Muradov",
         surname: "Shaxzod",
         fullName: "Muradov Shaxzod",
@@ -51,7 +32,7 @@ export const ustozlar = [
         
     },
     {
-        id: 3,
+        id: 2,
         name: "Elmurodov",
         surname: "Ziyodulloh",
         fullName: "Elmurodov Ziyodulloh",
@@ -70,7 +51,7 @@ export const ustozlar = [
 
     },
     {
-        id: 4,
+        id: 3,
         name: "Hamidov",
         surname: "Jahongir",
         fullName: "Hamidov Jahongir",
@@ -87,7 +68,7 @@ export const ustozlar = [
         kursNarxi: '740.000',
     },
     {
-        id: 5,
+        id: 4,
         name: "Muradova",
         surname: "Nurona",
         fullName: "Muradova Nurona",
@@ -106,7 +87,7 @@ export const ustozlar = [
 
     },
     {
-        id: 6,
+        id: 5,
         name: "Xoliqov",
         surname: "Sayyorbek",
         fullName: "Xoliqov Sayyorbek",
@@ -127,7 +108,7 @@ export const ustozlar = [
 
     },
     {
-        id: 7,
+        id: 6,
         name: "G`ulomhusinov",
         surname: "Muhammadmuso",
         fullName: "G`ulomhusinov Muhammadmuso",
@@ -145,11 +126,11 @@ export const ustozlar = [
         texnologiyalar: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'AI', 'Terminal Commands', "Django"],
     },
     {
-        id: 8,
+        id: 7,
         name: "Abdurahmonov",
         surname: "Toshtemir",
         fullName: "Abdurahmonov Toshtemir",
-        img: shahzodAkajon,
+        img: toshtemirUstoz,
         kursNomi: 'Robototexnika',
         tajriba: "+3 yil",
         mamnunOquvchilar: "+60",
@@ -164,7 +145,7 @@ export const ustozlar = [
 
     },
     {
-        id: 9,
+        id: 8,
         name: "Hamidov",
         surname: "Mansur",
         fullName: "Hamidov Mansur", 

@@ -17,7 +17,7 @@ const Online = () => {
     window.open(telegramUrl, "_blank", "noopener,noreferrer");
   };
   return (
-    <OnlineCourses data-aos="fade-down">
+    <OnlineCourses>
 
       <div className="max-width">
         <div className=" not-found">

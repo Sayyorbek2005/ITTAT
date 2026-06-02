@@ -26,7 +26,7 @@ const Course = () => {
     console.log(item.texnologiyalar);
     console.log('====================================');
     return (
-        <S.CourseDetailPage data-aos="fade-down">
+        <S.CourseDetailPage>
             <div className="max-width">
                  <S.BackButton onClick={() => navigate(-1)}>
             <IoIosArrowBack />

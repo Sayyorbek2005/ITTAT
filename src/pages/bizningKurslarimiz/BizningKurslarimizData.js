@@ -17,7 +17,8 @@ import oytem from '../../assets/oytijon.png'
 import jaxongirUstoz from '../../assets/Jahongir.jpg'
 import ziyo from '../../assets/Ziyo.jpg'
 import MuhammadUstoz from '../../assets/Muhammad-ustoz.png'
-import toshtemirUstoz  from '../../assets/toshtemirUstoz.png'
+import toshtemirUstoz  from '../../assets/ToshtemirUstozim.png'
+
 
 
 export const BizningKurslar = [

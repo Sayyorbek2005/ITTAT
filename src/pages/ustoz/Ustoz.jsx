@@ -22,7 +22,7 @@ const Ustoz = () => {
   }
 
   return (
-    <div className="max-width" data-aos="fade-down">
+    <div className="max-width">
 
     <div className="ustoz-page">
       

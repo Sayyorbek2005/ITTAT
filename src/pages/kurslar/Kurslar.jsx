@@ -19,7 +19,7 @@ const Kurslar = () => {
 
   return (
     <>
-    <div className='max-width' data-aos="fade-down">
+    <div className='max-width'>
       <KurslarCont>
         <Title>Kurslar</Title>
 

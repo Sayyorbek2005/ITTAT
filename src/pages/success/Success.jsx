@@ -18,28 +18,32 @@ const videos = [
 
 export default function Success() {
   const players = useRef({});
-  const [setActiveId] = useState(null);
+  const [activeId, setActiveId] = useState(null);
 
-  // 🎯 boshqa videolarni pause
   const handlePlay = (id) => {
     Object.entries(players.current).forEach(([key, player]) => {
-      if (player && key !== String(id)) {
+      if (Number(key) !== id && player?.pauseVideo) {
         try {
           player.pauseVideo();
-        } catch {}
+        } catch (error) {
+          console.log(error);
+        }
       }
     });
 
     setActiveId(id);
   };
 
-  // 🎯 tabdan chiqsa stop
   useEffect(() => {
     const stopAll = () => {
       Object.values(players.current).forEach((player) => {
-        try {
-          if (player) player.pauseVideo();
-        } catch {}
+        if (player?.pauseVideo) {
+          try {
+            player.pauseVideo();
+          } catch (error) {
+            console.log(error);
+          }
+        }
       });
     };
 
@@ -60,19 +64,25 @@ export default function Success() {
         modules={[Navigation]}
         slidesPerView={3}
         spaceBetween={30}
-        navigation
-        loop={true}
+        navigation={true}
+        loop={false}
         breakpoints={{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1100: { slidesPerView: 3 },
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1100: {
+            slidesPerView: 3,
+          },
         }}
       >
         {videos.map((item) => (
           <SwiperSlide key={item.id}>
             <div className="card">
-
               <YouTube
+                id={`youtube-${item.id}`}
                 videoId={item.videoId}
                 opts={{
                   width: "100%",
@@ -80,10 +90,11 @@ export default function Success() {
                   playerVars: {
                     autoplay: 0,
                     controls: 1,
+                    rel: 0,
                   },
                 }}
-                onReady={(e) => {
-                  players.current[item.id] = e.target;
+                onReady={(event) => {
+                  players.current[item.id] = event.target;
                 }}
                 onPlay={() => handlePlay(item.id)}
               />
@@ -92,7 +103,6 @@ export default function Success() {
                 <h3>{item.name}</h3>
                 <p>{item.desc}</p>
               </div>
-
             </div>
           </SwiperSlide>
         ))}

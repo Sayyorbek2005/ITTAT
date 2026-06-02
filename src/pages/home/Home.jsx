@@ -42,7 +42,7 @@ const Home = () => {
 
     
   return (
-    <SectionWrapper data-aos="fade-down">
+    <SectionWrapper>
       <div className="max-width">
 
         <Title>

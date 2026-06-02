@@ -28,17 +28,15 @@ export const Button = styled.button`
 
 // ? for modal
 export const ModalBackground = styled.div`
-  position: fixed;
+  position: fixed !important;
   top: 0px;
   left: 0px;
   bottom: 0px;
   right: 0px;
-
+  height: 100vh;
   background: rgba(0,0,0,0.5);
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   z-index: 9999; /* 🔥 MUHIM */
 `;

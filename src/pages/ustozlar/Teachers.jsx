@@ -17,7 +17,7 @@ const Teachers = () => {
         navigate(`/ustoz/${id}`);
     };
   return (
-    <div className='ustozlar' data-aos="fade-down"> 
+    <div className='ustozlar'> 
 
     <div className='max-width' >
 
