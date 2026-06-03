@@ -7,10 +7,10 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
-
+ 
 const videos = [
   { id: 1, videoId: "E2e7t4vlwuc", name: "Esther Howard", desc: "Frontend" },
-  { id: 2, videoId: "dQw4w9WgXcQ", name: "Saidazimjon", desc: "React" },
+  { id: 2, videoId: "6Of9y32PzUI", name: "Saidazimjon", desc: "React" },
   { id: 3, videoId: "E2e7t4vlwuc", name: "Sayyor", desc: "JS" },
   { id: 4, videoId: "dQw4w9WgXcQ", name: "Jaxongir", desc: "Frontend" },
   { id: 5, videoId: "E2e7t4vlwuc", name: "Nuriddin", desc: "React" },
