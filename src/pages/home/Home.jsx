@@ -39,6 +39,7 @@ const Home = () => {
   
         navigate(`/kurslar/${id}`);
     };
+    
 
     
   return (

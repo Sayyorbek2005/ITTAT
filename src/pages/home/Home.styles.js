@@ -3,6 +3,7 @@ import styled from "styled-components";
 /* WRAPPER */
 export const SectionWrapper = styled.section`
   padding: 50px 0;
+  
 `;
 
 /* CONTAINER */
@@ -37,7 +38,7 @@ export const Left = styled.div`
 
 /* CENTER */
 export const Center = styled.div`
-  background: var(--dark-primary-color);
+  background: var(--primary);
   border-radius: 16px;
   padding: 20px;
   display: flex;
@@ -71,7 +72,7 @@ export const Tags = styled.div`
 
 /* RIGHT */
 export const Right = styled.div`
-  background: var(--dark-primary-color);
+  background: var(--primary);
   border-radius: 16px;
   padding: 20px;
   color: var(--black);
@@ -98,7 +99,6 @@ button{
     background-color: var(--white);
     color: var(--primary);
     border: 1px solid transparent;
-    padding: 15px;
     
     width: 100%;
     transition: all .3s ease;

@@ -10,7 +10,7 @@ export const KurslarCont = styled.div`
     .kont {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
         gap: var(--gap-50);
     }
@@ -23,10 +23,10 @@ export const CardContainer = styled.div`
   align-self: center; // Markazga tekislash
   background: var(--white);
   border-radius: 20px;
-  padding: var(--gap-20);
+  padding: 15px 15px;
   width: 100%;
-  max-width: 600px;
-  height: 450px;
+  max-width: 625px;
+  height: 400px;
   box-shadow: 0px 0px 10px 2px rgba(142, 141, 141, 0.26);
   /* border: 1px solid var(--e5); */
   
@@ -50,7 +50,7 @@ export const LeftSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px 10px 0;
+  padding: 0px 10px 0px 0;
   border-right: 1px solid var(--e5);
   min-width: 100px;
 
@@ -72,6 +72,14 @@ export const LeftSection = styled.div`
     margin-bottom: 20px;
     gap: var(--gap-30);
     width: 100%;
+    padding:20px;
+
+
+    img{
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
 
     
     .nameBar{
@@ -81,6 +89,7 @@ export const LeftSection = styled.div`
       justify-content: flex-start;
       
   };
+
   }
 
   
@@ -90,8 +99,8 @@ export const LeftSection = styled.div`
 
 
 export const MentorImage = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 15px;
   object-fit: contain;
   
