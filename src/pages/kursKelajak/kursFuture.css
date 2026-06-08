@@ -2,7 +2,7 @@
     background-color: var(--primary);
 
     h1 {
-        padding-top: 50px;
+        padding-top: 100px;
         color: var(--white) !important;
     }
 }

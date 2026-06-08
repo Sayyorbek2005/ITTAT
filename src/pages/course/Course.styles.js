@@ -13,7 +13,7 @@ export const CourseDetailPage = styled.div`
         padding-bottom: 50px;
     }
     .texnologialar > h1{
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
 
@@ -50,7 +50,7 @@ export const CourseDetailPage = styled.div`
         background-color: var(--primary);
         padding: 50px 0px;
         h1{
-            padding-top: 0px;
+            padding-top: 50px;
             color: var(--white) !important;
         }
     }
@@ -113,7 +113,7 @@ export const CourseDetailPage = styled.div`
         padding: 50px 0px 100px 0px;
 
         h1{
-            padding-top: 0px;
+            padding-top: 50px;
         }
     }
 

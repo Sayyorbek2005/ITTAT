@@ -7,7 +7,9 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
- 
+
+import { Title } from "../../style/StyleComponent";
+
 const videos = [
   { id: 1, videoId: "E2e7t4vlwuc", name: "Esther Howard", desc: "Frontend" },
   { id: 2, videoId: "6Of9y32PzUI", name: "Saidazimjon", desc: "React" },
@@ -17,55 +19,73 @@ const videos = [
 ];
 
 export default function Success() {
-  const players = useRef({});
+  const playersRef = useRef({});
   const [activeId, setActiveId] = useState(null);
 
-  const handlePlay = (id) => {
-    Object.entries(players.current).forEach(([key, player]) => {
-      if (Number(key) !== id && player?.pauseVideo) {
-        try {
-          player.pauseVideo();
-        } catch (error) {
-          console.log(error);
+  const stopOtherVideos = (currentId) => {
+    Object.keys(playersRef.current).forEach((id) => {
+      if (Number(id) !== currentId) {
+        const player = playersRef.current[id];
+
+        if (
+          player &&
+          typeof player.pauseVideo === "function"
+        ) {
+          try {
+            player.pauseVideo();
+          } catch (e) {
+            console.log(e);
+          }
         }
       }
     });
-
-    setActiveId(id);
   };
 
   useEffect(() => {
-    const stopAll = () => {
-      Object.values(players.current).forEach((player) => {
-        if (player?.pauseVideo) {
+    const stopAllVideos = () => {
+      Object.values(playersRef.current).forEach((player) => {
+        if (
+          player &&
+          typeof player.pauseVideo === "function"
+        ) {
           try {
             player.pauseVideo();
-          } catch (error) {
-            console.log(error);
+          } catch (e) {
+            console.log(e);
           }
         }
       });
     };
 
-    window.addEventListener("blur", stopAll);
-    window.addEventListener("beforeunload", stopAll);
+    window.addEventListener("blur", stopAllVideos);
 
     return () => {
-      window.removeEventListener("blur", stopAll);
-      window.removeEventListener("beforeunload", stopAll);
+      window.removeEventListener("blur", stopAllVideos);
     };
   }, []);
 
+  const opts = {
+    width: "100%",
+    height: "500",
+    playerVars: {
+      autoplay: 0,
+      controls: 1,
+      rel: 0,
+      modestbranding: 1,
+      fs: 1,
+    },
+  };
+
   return (
     <div className="success">
-      <h1>O‘quvchilar muvaffaqiyati</h1>
+      <Title>O‘quvchilar muvaffaqiyati</Title>
 
       <Swiper
         modules={[Navigation]}
-        slidesPerView={3}
+        navigation
+        observer={true}
+        observeParents={true}
         spaceBetween={30}
-        navigation={true}
-        loop={false}
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -86,22 +106,28 @@ export default function Success() {
               }`}
             >
               <YouTube
-                id={`youtube-${item.id}`}
                 videoId={item.videoId}
-                opts={{
-                  width: "100%",
-                  height: "500",
-                  playerVars: {
-                    autoplay: 0,
-                    controls: 1,
-                    rel: 0,
-                  },
-                }}
-                
+                opts={opts}
                 onReady={(event) => {
-                  players.current[item.id] = event.target;
+                  playersRef.current[item.id] = event.target;
                 }}
-                onPlay={() => handlePlay(item.id)}
+                onStateChange={(event) => {
+                  const state = event.data;
+
+                  // 1 = PLAYING
+                  if (state === 1) {
+                    setActiveId(item.id);
+                    stopOtherVideos(item.id);
+                  }
+
+                  // 0 = ENDED
+                  // 2 = PAUSED
+                  if (state === 0 || state === 2) {
+                    setActiveId((prev) =>
+                      prev === item.id ? null : prev
+                    );
+                  }
+                }}
               />
 
               <div className="info">
