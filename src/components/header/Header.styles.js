@@ -95,11 +95,11 @@ export const MobileMenu = styled.div`
   right: 0;
   max-width: 500px;
   width: 100%;
-  border-bottom-left-radius: 300px;
-  height: 100vh;
+  /* border-bottom-left-radius: 50%; */
+  height: 82vh;
   background: #fff;
   z-index: 1001;
-  padding: 60px 30px;
+  padding: 60px 20px 20px 100px;
   display: flex;
   flex-direction: column;
   gap: var(--gap-30);
@@ -115,11 +115,11 @@ export const MobileMenu = styled.div`
     opacity 0.5s ease;
 
   /* Yopiq holatda yuqoriga va o'ngga qisqarib, kichrayib turadi (To'lqin qaytishi) */
-  transform: ${({ active }) => (active ? "translate(0, 0) scale(1)" : "translate(40px, -40px) scale(0)")};
+  transform: ${({ active }) => (active ? "translate(0, 0) scale(1.2)" : "translate(40px, -40px) scale(0)")};
   opacity: ${({ active }) => (active ? "1" : "0")};
   
   /* To'lqin sohilga urilganda radius yoyiladi (Silliqlashadi) */
-  border-bottom-left-radius: ${({ active }) => (active ? "120px" : "300px")};
+  border-bottom-left-radius: ${({ active }) => (active ? "600px" : "600px")};
 
   ul {
     list-style: none;

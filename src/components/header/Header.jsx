@@ -13,6 +13,8 @@ import {
   MobileMenu,
   Overlay
 } from "./Header.styles";
+import { Socials } from "../footer/Footer.styles";
+import { FaInstagram, FaTelegramPlane } from "react-icons/fa";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -61,13 +63,33 @@ const Header = () => {
           <li onClick={toggleMenu}><NavLink to="/kurslar">Kurslar</NavLink></li>
           <li onClick={toggleMenu}><NavLink to="/ustozlar">Ustozlar</NavLink></li>
           <li onClick={toggleMenu}><NavLink to="/online">Online kurslar</NavLink></li>
-        </ul>
 
-        <div className="display-flex j-left">
-          <a href="tel:+998886110440">
+        <div className="display-flex j-left" style={{ borderBottom: "1px solid var(--primary)", paddingBottom: "20px", marginBottom: "10px" }}>
+          <a style={{ color: "var(--primary)" }} href="tel:+998886110440">
             <LuPhone /> +998 (88) 611-04-40
           </a>
         </div>
+           <Socials>
+          
+                      <a
+                        href="https://t.me/it_tat_qabul"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "var(--primary)", display: "flex", alignItems: "center", justifyContent: "center",  border: "1px solid var(--primary)", padding: "5px", borderRadius: "10px" }}
+                      >
+          
+                        <FaTelegramPlane style={{ fontSize: "35px" }} />
+                      </a>
+          
+                      <a href="https://instagram.com/it_tat_samarkand"
+                        style={{ color: "var(--primary)", display: "flex", alignItems: "center", justifyContent: "center",  border: "1px solid var(--primary)", padding: "5px", borderRadius: "10px" }}>
+          
+                        <FaInstagram style={{ fontSize: "35px" }} />
+                      </a>
+          
+                    </Socials>
+        </ul>
+
       </MobileMenu>
     </>
   );
