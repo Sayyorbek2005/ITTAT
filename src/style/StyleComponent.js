@@ -19,10 +19,13 @@ export const Button = styled.button`
     border: none;
     border-radius: 5px;
     font-size: var(--font-size-20);
+    transition: all .3s ease;
+    border: 1px solid var(--primary);
     
 
     &:hover {
-        background-color: var(--dark-primary-color);
+        background-color: var(--white);
+        color: var(--primary);
     }
 `       
 

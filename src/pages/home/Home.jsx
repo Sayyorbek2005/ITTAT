@@ -36,12 +36,12 @@ const Home = () => {
   //  ? go kourse
 
   const handleCardClick = (id) => {
-  
-        navigate(`/kurslar/${id}`);
-    };
-    
 
-    
+    navigate(`/kurslar/${id}`);
+  };
+
+
+
   return (
     <SectionWrapper>
       <div className="max-width">
@@ -61,11 +61,11 @@ const Home = () => {
         {/* CENTER */}
         <Center>
           {BizningKurslar && BizningKurslar.map((item, index) => (
-            
+
             <Tags key={index} onClick={() => handleCardClick(item.id)} style={{ cursor: 'pointer' }} >
-            <span>{item.nomi}</span>
-          
-          </Tags>
+              <span>{item.nomi}</span>
+
+            </Tags>
           ))}
         </Center>
 
@@ -96,9 +96,9 @@ const Home = () => {
       <TalimFormati />
       <Feedback />
       <Ishlash />
-      <KoursesFuture /> 
+      <KoursesFuture />
       <Savollar />
-      
+
     </SectionWrapper>
 
     // nega bizni tanlashadi

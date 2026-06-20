@@ -15,6 +15,7 @@ import {
 } from "./Header.styles";
 import { Socials } from "../footer/Footer.styles";
 import { FaInstagram, FaTelegramPlane } from "react-icons/fa";
+import { Button } from "../../style/StyleComponent";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -40,9 +41,12 @@ const Header = () => {
 
           {/* Desktop Telefon */}
           <Right>
-            <a href="tel:+998886110440">
+            <a href="tel:+998886110440" style={{marginRight: '10px'}}>
               <LuPhone /> +998 (88) 611-04-40
             </a>
+            <Button>
+              Ro`yxatdan o`tishs
+            </Button>
           </Right>
 
           {/* Mobil uchun Menu Icon */}

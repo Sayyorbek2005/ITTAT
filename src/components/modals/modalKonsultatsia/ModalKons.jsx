@@ -123,6 +123,7 @@ function ModalKons({ onClose }) {
 
       <form onSubmit={handleSubmit}>
         <Input
+        
           type="text"
           name="name"
           placeholder="Ismingiz"

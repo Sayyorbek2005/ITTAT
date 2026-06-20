@@ -46,7 +46,11 @@ export const Input = styled.input`
   border: ${(props) => (props.error ? "1px solid red" : "1px solid #ccc")};
   outline: none;
   font-size: 18px;
-  
+  color: var(--black);
+
+  &::placeholder {
+    color: black;
+  }
 `;
 
 export const Select = styled.select`

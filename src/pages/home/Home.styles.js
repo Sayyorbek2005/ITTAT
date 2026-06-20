@@ -65,7 +65,8 @@ export const Tags = styled.div`
     cursor: pointer;
 
     &:hover{
-        transform: translateX(10px);
+        background: var(--white);
+        color:var(--primary);
     }
   }
 `;

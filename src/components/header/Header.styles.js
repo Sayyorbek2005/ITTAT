@@ -45,6 +45,7 @@ export const Nav = styled.ul`
     font-size: var(--font-size-16) !important;
     font-size: 15px;
     transition: 0.3s;
+    padding: 5px;
     &.active { color: var(--primary); }
     &:hover { color: var(--primary); }
   }
