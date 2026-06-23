@@ -116,25 +116,6 @@ function ModalRegist
     }
   };
 
-  // ? select
-
-  const courseOptions = [
-  { value: "backend", label: "Backend" },
-  { value: "frontend", label: "Frontend" },
-  { value: "robotexnika", label: "Robotexnika" },
-  { value: "foundation", label: "Foundation" },
-  { value: "grafik", label: "Grafik dizayn" },
-  { value: "smm", label: "SMM" },
-  { value: "kompyuter", label: "Kompyuter savodxonligi" },
-];
-
-  const handleCourseChange = (selectedOption) => {
-  setFormData((prev) => ({
-    ...prev,
-    course: selectedOption ? selectedOption.value : "",
-  }));
-};
-
 
 
   return (
@@ -145,63 +126,46 @@ function ModalRegist
         Aloqa ma'lumotlaringizni qoldiring, siz bilan bog‘lanamiz.
       </Subtitle>
 
-      <form onSubmit={handleSubmit}>
-        <Input
-          type="text"
-          name="name"
-          placeholder="Ismingiz"
-          value={formData.name}
-          onChange={handleChange}
-          error={errors.name}
-        />
-
-        <Input
-          type="text"
-          name="phone"
-          placeholder="+998901234567"
-          value={formData.phone}
-          onChange={handleChange}
-          error={errors.phone}
-        />
-
-        <Select
-  options={courseOptions}
-  onChange={handleCourseChange}
-  placeholder="Kurs tanlang"
-  isSearchable={false}
-  styles={{
-    control: (base, state) => ({
-      ...base,
-      padding: "6px",
-      borderRadius: "6px",
-      border: state.isFocused ? "1px solid #4a90e2" : "1px solid #ccc",
-      boxShadow: "none",
-      "&:hover": {
-        border: "1px solid #4a90e2",
-      },
-    }),
-
-    option: (base, state) => ({
-      ...base,
-      backgroundColor: state.isFocused ? "#4a90e2" : "#fff",
-      color: state.isFocused ? "#fff" : "#000",
-      cursor: "pointer",
-    }),
-
-    menu: (base) => ({
-      ...base,
-      borderRadius: "6px",
-      overflow: "hidden",
-    }),
-  }}
-/>
-
-
-        <Button type="submit" disabled={loading}>
-          {loading ? "Yuborilmoqda..." : "Yuborish"}
-
-        </Button>
-      </form>
+       <form onSubmit={handleSubmit}>
+             <Input
+             
+               type="text"
+               name="name"
+               placeholder="Ismingiz"
+               value={formData.name}
+               onChange={handleChange}
+               error={errors.name}
+             />
+     
+             <Input
+               type="text"
+               name="phone"
+               placeholder="+998901234567"
+               value={formData.phone}
+               onChange={handleChange}
+               error={errors.phone}
+             />
+     
+             <Select
+               name="course"
+               value={formData.course}
+               onChange={handleChange}
+               error={errors.course}
+             >
+               <option value="">Kurs tanlang</option>
+               <option value="backend">Backend</option>
+               <option value="frontend">Frontend</option>
+               <option value="robotexnika">Robotexnika</option>
+               <option value="foundation">Foundation</option>
+               <option value="grafik">Grafik dizayn</option>
+               <option value="smm">SMM</option>
+               <option value="kompyuter">Kompyuter savodxonligi</option>
+             </Select>
+     
+             <Button type="submit" disabled={loading}>
+               {loading ? "Yuborilmoqda..." : "Yuborish"}
+             </Button>
+           </form>
 
        <ToastContainer
         position="top-right"

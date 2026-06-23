@@ -19,11 +19,11 @@ const Coverking = () => {
         </Title>
         <div className="cowerking-img-bar">
             <div className="left">
-                <img src={cowerkingOne} alt="" />
+                <img src={cowerkingThree} alt="" />
             </div>
             <div className="right">
                 <img src={cowerkingTwo} alt="" />
-                <img src={cowerkingThree} alt="" />
+                <img src={cowerkingOne} alt="" />
             </div>
         </div>
       
