@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import "./success.css";
 import YouTube from "react-youtube";
 
@@ -13,62 +13,35 @@ import { Title } from "../../style/StyleComponent";
 const videos = [
   { id: 1, videoId: "E2e7t4vlwuc", name: "Esther Howard", desc: "Frontend" },
   { id: 2, videoId: "6Of9y32PzUI", name: "Saidazimjon", desc: "React" },
-  { id: 3, videoId: "E2e7t4vlwuc", name: "Sayyor", desc: "JS" },
+  { id: 3, videoId: "E2e7t4vlwuc", name: "Sayyor", desc: "JavaScript" },
   { id: 4, videoId: "dQw4w9WgXcQ", name: "Jaxongir", desc: "Frontend" },
   { id: 5, videoId: "E2e7t4vlwuc", name: "Nuriddin", desc: "React" },
 ];
 
 export default function Success() {
-  const playersRef = useRef({});
-  const [activeId, setActiveId] = useState(null);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const modalPlayerRef = useRef(null);
 
-  const stopOtherVideos = (currentId) => {
-    Object.keys(playersRef.current).forEach((id) => {
-      if (Number(id) !== currentId) {
-        const player = playersRef.current[id];
-
-        if (
-          player &&
-          typeof player.pauseVideo === "function"
-        ) {
-          try {
-            player.pauseVideo();
-          } catch (e) {
-            console.log(e);
-          }
-        }
+  const closeModal = () => {
+    try {
+      if (
+        modalPlayerRef.current &&
+        typeof modalPlayerRef.current.stopVideo === "function"
+      ) {
+        modalPlayerRef.current.stopVideo();
       }
-    });
+    } catch (err) {
+      console.log(err);
+    }
+
+    setSelectedVideo(null);
   };
 
-  useEffect(() => {
-    const stopAllVideos = () => {
-      Object.values(playersRef.current).forEach((player) => {
-        if (
-          player &&
-          typeof player.pauseVideo === "function"
-        ) {
-          try {
-            player.pauseVideo();
-          } catch (e) {
-            console.log(e);
-          }
-        }
-      });
-    };
-
-    window.addEventListener("blur", stopAllVideos);
-
-    return () => {
-      window.removeEventListener("blur", stopAllVideos);
-    };
-  }, []);
-
-  const opts = {
+  const modalOpts = {
     width: "100%",
-    height: "500",
+    height: "700",
     playerVars: {
-      autoplay: 0,
+      autoplay: 1,
       controls: 1,
       rel: 0,
       modestbranding: 1,
@@ -83,8 +56,7 @@ export default function Success() {
       <Swiper
         modules={[Navigation]}
         navigation
-        observer={true}
-        observeParents={true}
+        className="mySwiper"
         spaceBetween={30}
         breakpoints={{
           0: {
@@ -100,44 +72,61 @@ export default function Success() {
       >
         {videos.map((item) => (
           <SwiperSlide key={item.id}>
-            <div
-              className={`card ${
-                activeId === item.id ? "active-video" : ""
-              }`}
-            >
-              <YouTube
-                videoId={item.videoId}
-                opts={opts}
-                onReady={(event) => {
-                  playersRef.current[item.id] = event.target;
-                }}
-                onStateChange={(event) => {
-                  const state = event.data;
+            <div className="sw-cont-card">
+              <div className="card">
+                <div
+                  className="thumb"
+                  style={{
+                    backgroundImage: `url(https://img.youtube.com/vi/${item.videoId}/maxresdefault.jpg)`,
+                  }}
+                  onClick={() => setSelectedVideo(item)}
+                >
+                  <div className="overlay">
+                    <div>
+                      <h2>{item.name}</h2>
+                      <p>{item.desc}</p>
+                    </div>
 
-                  // 1 = PLAYING
-                  if (state === 1) {
-                    setActiveId(item.id);
-                    stopOtherVideos(item.id);
-                  }
-
-                  // 0 = ENDED
-                  // 2 = PAUSED
-                  if (state === 0 || state === 2) {
-                    setActiveId((prev) =>
-                      prev === item.id ? null : prev
-                    );
-                  }
-                }}
-              />
-
-              <div className="info">
-                <h3>{item.name}</h3>
-                <p>{item.desc}</p>
+                    <button
+                      className="playBtn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedVideo(item);
+                      }}
+                    >
+                      ▶
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {selectedVideo && (
+        <div className="modalOverlay" onClick={closeModal}>
+          <div
+            className="modalContent"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="closeModalBtn"
+              onClick={closeModal}
+            >
+              ✕
+            </button>
+
+            <YouTube
+              videoId={selectedVideo.videoId}
+              opts={modalOpts}
+              onReady={(event) => {
+                modalPlayerRef.current = event.target;
+              }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
