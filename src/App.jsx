@@ -1,16 +1,33 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect, useState, Suspense } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import "./style/StyleComponent";
+
 import { routes } from "./routes/Routes";
 import ScrollToTop from "./components/scroll/ScrollToTop";
-import { Suspense } from "react";
-import Loading from "./Loading";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Loading from "./components/loading/Loading";
 
 function App() {
-  
+  const location = useLocation();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <div className="App">
       <ScrollToTop />
