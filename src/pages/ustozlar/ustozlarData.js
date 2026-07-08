@@ -32,7 +32,7 @@ export const ustozlar = [
         
     },
     {
-        id: 2,
+        id: 6,
         name: "Elmurodov",
         surname: "Ziyodulloh",
         fullName: "Elmurodov Ziyodulloh",
@@ -51,7 +51,7 @@ export const ustozlar = [
 
     },
     {
-        id: 3,
+        id: 4,
         name: "Hamidov",
         surname: "Jahongir",
         fullName: "Hamidov Jahongir",
@@ -68,7 +68,7 @@ export const ustozlar = [
         kursNarxi: '740.000',
     },
     {
-        id: 4,
+        id: 5,
         name: "Muradova",
         surname: "Nurona",
         fullName: "Muradova Nurona",
@@ -87,7 +87,7 @@ export const ustozlar = [
 
     },
     {
-        id: 5,
+        id: 3,
         name: "Xoliqov",
         surname: "Sayyorbek",
         fullName: "Xoliqov Sayyorbek",
@@ -108,9 +108,9 @@ export const ustozlar = [
 
     },
     {
-        id: 6,
+        id: 7,
         name: "G`ulomhusinov",
-        surname: "Muhammadmuso",
+        surname: "Muhammad",
         fullName: "G`ulomhusinov Muhammadmuso",
         img: MuhammadUstoz,
         kursNomi: 'Backend',
@@ -126,7 +126,7 @@ export const ustozlar = [
         texnologiyalar: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'AI', 'Terminal Commands', "Django"],
     },
     {
-        id: 7,
+        id: 8,
         name: "Abdurahmonov",
         surname: "Toshtemir",
         fullName: "Abdurahmonov Toshtemir",
