@@ -15,7 +15,7 @@ const Coverking = () => {
         <div className="max-width">
 
         <Title>
-            Bepul cowerking
+            Bepul coworking
         </Title>
         <div className="cowerking-img-bar">
             <div className="left">

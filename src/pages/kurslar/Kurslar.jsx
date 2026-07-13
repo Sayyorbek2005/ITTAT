@@ -11,10 +11,9 @@ import { useNavigate } from 'react-router-dom';
 const Kurslar = () => {
   const navigate = useNavigate()
 
-   const handleCardClick = (id) => {
-        // Kurs sahifasiga yo'naltirish (masalan: /course/1)
-        navigate(`/ustoz/${id}`);
-    };
+const handleCardClick = (id) => {
+    navigate(`/kurslar/${id}`);
+};
 
 
   return (

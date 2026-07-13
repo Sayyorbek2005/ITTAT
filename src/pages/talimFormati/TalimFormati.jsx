@@ -42,7 +42,7 @@ const TalimFormati = () => {
       <img src={talimOne} alt="" />
                 </div>
                 <div className=" pad talim-right">
-                    <h1>guruh</h1>
+                    <h1>Guruh</h1>
                     <p>
                         Bu 10-12 kishidan iborat jamoada ta’lim olish tizimi bo‘lib, o‘quvchilarga o‘zaro tajriba almashish, jamoaviy muhitda ishlash va IT sohasida zarur ko‘nikmalarni o‘zlashtirish imkonini beradi. Ushbu kurs turli darajadagi o‘quvchilar uchun mos bo‘lib, nazariy va amaliy mashg‘ulotlar uyg‘unligi asosida olib boriladi.
 

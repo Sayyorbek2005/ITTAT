@@ -45,7 +45,7 @@ const Header = () => {
               <LuPhone /> +998 (88) 611-04-40
             </a>
             <Button>
-              Ro`yxatdan o`tishs
+              Ro`yxatdan o`tish
             </Button>
           </Right>
 
