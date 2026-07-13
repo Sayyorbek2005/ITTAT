@@ -16,6 +16,9 @@ export const HeaderWrapper = styled.header`
   backdrop-filter: blur(12px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   z-index: 1000;
+
+
+
 `;
 
 export const Container = styled.div`

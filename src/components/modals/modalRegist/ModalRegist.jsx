@@ -120,7 +120,7 @@ function ModalRegist
 
   return (
     <FormWrapper>
-      <Title>Bepul Registratsiya</Title>
+      <Title>Ro`yxatdan o`tish</Title>
 
       <Subtitle>
         Aloqa ma'lumotlaringizni qoldiring, siz bilan bog‘lanamiz.

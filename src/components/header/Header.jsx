@@ -15,11 +15,14 @@ import {
 } from "./Header.styles";
 import { Socials } from "../footer/Footer.styles";
 import { FaInstagram, FaTelegramPlane } from "react-icons/fa";
-import { Button } from "../../style/StyleComponent";
+import { Button, ModalBackground } from "../../style/StyleComponent";
+import ModalRegist from "../modals/modalRegist/ModalRegist";
 
 const Header = () => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState(false);
+
+  const [show, setShow] = useState(false)
 
   const toggleMenu = () => setIsActive(!isActive);
 
@@ -44,10 +47,18 @@ const Header = () => {
             <a href="tel:+998886110440" style={{marginRight: '10px'}}>
               <LuPhone /> +998 (88) 611-04-40
             </a>
-            <Button>
+            <Button onClick={() => setShow(true)} >
               Ro`yxatdan o`tish
             </Button>
           </Right>
+
+            {show && (
+                    <ModalBackground onClick={() => setShow(false)}>
+                      <div className="hed-regist" onClick={(e) => e.stopPropagation()}>
+                        <ModalRegist onClose={() => setShow(false)} />
+                      </div>
+                    </ModalBackground>
+                  )}
 
           {/* Mobil uchun Menu Icon */}
           <MenuIcon onClick={toggleMenu}>
