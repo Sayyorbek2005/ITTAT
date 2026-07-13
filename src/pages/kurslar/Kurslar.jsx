@@ -58,22 +58,22 @@ const handleCardClick = (id) => {
                 <S.InfoGrid>
                   <S.InfoItem>
                     <S.Label>Kurs davomiyligi</S.Label>
-                    <S.Value>{item.davomiyligi}</S.Value>
+                    <S.Value>{item.davomiyligi} oy</S.Value>
                   </S.InfoItem>
 
                   <S.InfoItem>
                     <S.Label>Dars soati</S.Label>
-                    <S.Value>{item.nechaSoat}</S.Value>
+                    <S.Value>{item.nechaSoat} soat</S.Value>
                   </S.InfoItem>
 
                   <S.InfoItem>
                     <S.Label>Haftada</S.Label>
-                    <S.Value>{item.haftada}</S.Value>
+                    <S.Value>{item.haftada} kun </S.Value>
                   </S.InfoItem>
 
                   <S.InfoItem>
                     <S.Label>Necha soat</S.Label>
-                    <S.Value>{item.nechaSoat}</S.Value>
+                    <S.Value>{item.nechaSoat} soat</S.Value>
                   </S.InfoItem>
                 </S.InfoGrid>
               </S.RightSection>

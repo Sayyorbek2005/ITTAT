@@ -27,7 +27,7 @@ export const BizningKurslar = [
     img: frontend,
     imgUstoz: shahzodAkajon,
     kategoriya: "Frontend kursi ustozi",
-    davomiyligi: "6 oy",
+    davomiyligi: "6",
     amaliyot: "+1 oy amaliyot",
     nomi: "Frontend",
     tavsif:
@@ -77,7 +77,7 @@ export const BizningKurslar = [
     imgUstoz: toshtemirUstoz,
     img: robo,
     kategoriya: " Robototexnika kursi ustozi",
-    davomiyligi: "6 oy",
+    davomiyligi: "6",
     nomi: "Robototexnika standard",
     tavsif:
       "Bu robotlar yaratish, ularni boshqarish va avtomatizatsiya tizimlarini ishlab chiqishga qaratilgan ilm-fan va texnologiya sohasidir.  Robototexnika nafaqat fizika va mexanika, balki dasturlash, elektronika va sun'iy intellekt sohalarini ham o'z ichiga oladi.",
@@ -113,7 +113,7 @@ export const BizningKurslar = [
     imgUstoz: sayyorbek,
     img: foundaion,
     kategoriya: "Foundation kursi ustozi",
-    davomiyligi: "2 oy",
+    davomiyligi: "2",
     nomi: "Foundation",
     tavsif:
       "Dasturlashni noldan o'rganmoqchi bo'lganlar uchun maxsus ishlab chiqilgan boshlang'ich kurs bo'lib, u IT sohasiga birinchi qadam qo'yish uchun mustahkam poydevor yaratadi.",
@@ -151,7 +151,7 @@ export const BizningKurslar = [
     imgUstoz: jaxongirUstoz,
     img: grafikDizayn,
     kategoriya: "Dizayn & AI pro kursi ustozi",
-    davomiyligi: "6 oy",
+    davomiyligi: "6",
     amaliyot: "+1 oy amaliyot",
     nomi: "Design & AI pro",
     tavsif:
@@ -188,7 +188,7 @@ export const BizningKurslar = [
     imgUstoz: oytem,
     img: smm,
     kategoriya: "SMM kursi ustozi",
-    davomiyligi: "3 oy",
+    davomiyligi: "3",
     nomi: "SMM",
     tavsif:
       "(Social Media Marketing) – bu ijtimoiy tarmoqlarda marketing strategiyalarini yaratish va amalga oshirish jarayonidir. SMMning asosiy maqsadi – mahsulot yoki xizmatni targ'ib qilish, brendni tanitish va maqsadli auditoriya bilan aloqani o'rnatishdir.",
@@ -225,7 +225,7 @@ export const BizningKurslar = [
     imgUstoz: ziyo,
     img: kompyuterSavotxonlik,
     kategoriya: "Kompiyuter savodxonligi kursi ustozi",
-    davomiyligi: "2 oy",
+    davomiyligi: "2",
     nomi: "Kompyuter savodxonligi",
     tavsif:
       "Kompyuter savodxonligi – bu kompyuter texnologiyalaridan samarali foydalanish va raqamli dunyoda ishlash uchun zarur bo'lgan bilim va ko'nikmalarni egallashni anglatadi.",
@@ -262,7 +262,7 @@ export const BizningKurslar = [
     imgUstoz: MuhammadUstoz,
     img: backent,
     kategoriya: "Backend kursi ustozi",
-    davomiyligi: "6 oy",
+    davomiyligi: "6",
     amaliyot: "+1 oy amaliyot",
     nomi: "Backend",
     tavsif:
@@ -298,7 +298,7 @@ export const BizningKurslar = [
     imgUstoz: toshtemirUstoz,
     img: roboPro,
     kategoriya: " Robototexnika pro kursi ustozi",
-    davomiyligi: "3 oy",
+    davomiyligi: "3",
     amaliyot: "+1 oy amaliyot",
     nomi: "Robototexnika pro",
     tavsif:
@@ -336,7 +336,7 @@ export const BizningKurslar = [
     imgUstoz: toshtemirUstoz,
     img: roboMaster,
     kategoriya: " Robototexnika master kursi ustozi",
-    davomiyligi: "2 oy",
+    davomiyligi: "2",
     amaliyot: "+1 oy amaliyot",
     nomi: "Robototexnika master",
     tavsif:
@@ -374,7 +374,7 @@ export const BizningKurslar = [
     imgUstoz: jaxongirUstoz,
     img: threeDModeling,
     kategoriya: "3d modeling pro kursi ustozi",
-    davomiyligi: "6 oy",
+    davomiyligi: "6",
     amaliyot: "+1 oy amaliyot",
     nomi: "3D modeling pro",
     tavsif:
