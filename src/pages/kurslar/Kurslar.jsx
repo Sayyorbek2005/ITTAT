@@ -58,7 +58,7 @@ const handleCardClick = (id) => {
                 <S.InfoGrid>
                   <S.InfoItem>
                     <S.Label>Kurs davomiyligi</S.Label>
-                    <S.Value>{item.davomiyligi} oy</S.Value>
+                    <S.Value>{item.davomiyligi}  oy</S.Value>
                   </S.InfoItem>
 
                   <S.InfoItem>

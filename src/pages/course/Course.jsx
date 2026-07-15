@@ -40,7 +40,7 @@ const Course = () => {
 
                     <S.InfoSide>
                         <h1>{item.nomi} kursi</h1>
-                        <p className="description">{item.tavsif}</p>
+                        <p className="description">{item.tavsif} </p>
 
                         <S.AiBanner>
                             <div className="badge">Ai ✦</div>
@@ -50,16 +50,16 @@ const Course = () => {
                         <S.StatsGrid>
                             <S.StatItem>
                                 <span>Kurs davomiyligi</span>
-                                <h2>{item.davomiyligi}</h2>
+                                <h2>{item.davomiyligi} oy</h2>
                                 {item.amaliyot && <div className="practice">+ 1 oy bepul amaliyot</div>}
                             </S.StatItem>
                             <S.StatItem>
                                 <span>Dars soati</span>
-                                <h2>{item.nechaSoat || '2'}:00</h2>
+                                <h2>{item.nechaSoat} soat</h2>
                             </S.StatItem>
                             <S.StatItem>
                                 <span>Haftada</span>
-                                <h2>{item.haftada || '3'} kun</h2>
+                                <h2>{item.haftada} kun</h2>
                             </S.StatItem>
                         </S.StatsGrid>
 

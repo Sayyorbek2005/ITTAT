@@ -165,22 +165,44 @@ export const CourseTitle = styled.h2`
   font-size: 25px;
   font-weight: var(--font-weight-700);
   margin: 0;
+
+ @media (max-width: 570px) {
+
+    font-size: 18px;
+    ;
+
+  }
+
 `;
 
 export const DetailsButton = styled.button`
   background-color: var(--primary);
   color: var(--white);
   border: none;
-  padding: var(--gap-10) var(--gap-20);
+  padding: 10px 15px;
   border-radius: 10px;
-  font-size: var(--font-size-16);
-  font-weight: var(--font-weight-500);
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
+  transition: all .3s ease;
 
   &:hover {
     background-color: var(--dark-primary-color);
+    transform: translateY(-2px);
   }
+  /* Mobile */
+  @media (max-width: 570px) {
+    padding: 5px !important;
+    font-size: 16px !important;
+    border-radius: 7px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 `;
 
 export const Description = styled.p`
